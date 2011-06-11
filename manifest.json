@@ -1,0 +1,17 @@
+{
+   "all_frames": true,
+   "background_page": "background.html",
+   "options_page": "options.html",
+   "browser_action": {
+      "default_icon": "icon.png",
+      "name": "Make this page less wide"
+   },
+   "description": "Shrink your pages.",
+   "icons": {
+      "128": "icon.png",
+      "48": "icon.png"
+   },
+   "name": "Page Shrinker",
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "version": "1.1.1"
+}

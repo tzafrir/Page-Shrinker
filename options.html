@@ -1,0 +1,87 @@
+<html><head><title>Page Shrinker Options</title>
+<style>
+#width {
+  width: 1310px;
+  position: absolute;
+  left: 303px;
+}
+
+#preview {
+  border: 1px dotted #228;
+}
+
+#save {
+  margin-left: 10px;
+  width: 100px;
+}
+
+</style>
+<script>
+  const setting = 'pageShrinker_width';
+  function refreshPreview() {
+    var new_val = document.getElementById('width').value;
+    document.getElementById('value').value = new_val;
+    document.getElementById('preview').style.maxWidth = new_val;
+    document.getElementById('save').innerHTML = "Save";
+    document.getElementById('save').disabled = false;
+  }
+
+  function saveSettings() {
+    localStorage[setting] = document.getElementById('width').value;
+    document.getElementById('save').innerHTML = "Saved!";
+    document.getElementById('save').disabled = true;
+  }
+  
+  function loadSettings() {
+    var width = localStorage[setting];
+    if (!width) width = "1000";
+    document.getElementById('value').value = width;
+    document.getElementById('width').value = width;
+    refreshPreview();
+  }
+</script>
+</head>
+<body onload="loadSettings()">
+  <h1>Page Width Setting</h1>
+  <h2>Slide the bar until you can easily read the text</h2>
+  <p class="inputbar">
+    <input id="value" type="text" disabled size="3" />
+    <button id="save" onclick="saveSettings()">Save</button>
+    <input id="width" type="range" min="300" max="1600" step="10" onchange="refreshPreview()"/>
+  </p>
+  <div id="preview">
+    Lorem ipsum dicunt feugait explicari ius ne, est an iuvaret gloriatur interpretaris. Nam ne nullam mediocrem molestiae, eos altera tibique persequeris ea, malis vocibus omittam eu usu. Populo suavitate cu usu, ei eam modo delenit invenire, ut accumsan delicata patrioque duo. His at consul pertinax expetenda. Vis ut esse legere convenire, tota viderer petentium his id. Et unum fugit mea, cu duo abhorreant consetetur sadipscing, et has erat vidit definitionem. Ad mei iudico latine eligendi, ex quem numquam detracto nam, libris doctus repudiare sea eu.
+
+ Cum essent salutatus voluptatibus ad, cum et quot sonet labore, an nam exerci fabulas fierent. Ei legere quaeque facilisis eam, ut his docendi accusam explicari, paulo gloriatur ea eam. Salutandi facilisis gloriatur no nec, sea choro mandamus vituperata ad. Sit possit habemus ea, quis ponderum ocurreret cum ei. Ea facilisi atomorum adipiscing nec. Te sit clita timeam adipisci, ne eos facer vocent dissentias. Brute eleifend splendide ad sit, mel ei nonumy voluptaria honestatis.
+
+ Ex dolore iisque apeirian ius, eu usu paulo ridens doctus, oratio minimum apeirian vis eu. Quo animal facilisis conclusionemque te, cum ad commune voluptaria argumentum. Vim aliquyam petentium id, mea illud delectus scribentur no, usu in liber suavitate reprimique. Vide audiam reprehendunt eu est, ubique elaboraret pro ne, tota etiam qui et. Utinam graecis suscipit mel te. Ne sea mazim ubique dissentias, ne errem nostro blandit eum.
+
+ Id errem munere placerat ius, mea eligendi adipisci efficiendi ei. Dico aeterno petentium cum te, diam vide veniam an pri. An per electram iracundia voluptatibus, in vel wisi illum quaeque, mei fuisset adversarium no. Nihil maiestatis mediocritatem quo et. Ut puto fastidii necessitatibus ius, nec an omnis movet repudiandae.
+
+ Mei quod ferri nostro in, id erat altera takimata eam. Sit semper aperiri abhorreant ei. Nec liber persius omittantur eu, possit scriptorem concludaturque at eam. Porro decore electram qui ad, timeam veritus efficiantur pri id. Per ut nisl assum quaerendum, cum odio modus in, et eum dicunt definitiones. Pro admodum splendide reprimique ut, ea eum maiorum invidunt perpetua.
+
+ Has ut labore facilis erroribus, sea equidem voluptaria et. Vel esse quidam dicunt cu. Eam at exerci graecis, pro verterem menandri voluptatibus in. Prompta recteque no usu, vis in porro cetero patrioque, essent noluisse assueverit ad est. Vim eu omnis consul epicurei. Ex eum sanctus elaboraret.
+
+ Ad tation dolorum intellegam cum, mel animal aliquam ad, at alii habeo dolore nec. Quo id tantas oblique torquatos, no qui sale nulla invenire. Ut vim principes euripidis disputando, et his oportere mediocrem adversarium, sed reque sanctus volutpat at. Labores tincidunt posidonium vim ut, mea eius habemus pertinacia ei. Ne duo dicam latine iracundia, ne malis minim dissentiet cum. Prima affert mel cu.
+
+ Puto omnesque adipiscing pri ne, id mei alia clita lobortis, verear accommodare cu usu. Ceteros mentitum liberavisse eam te, id eum stet errem vidisse. Sit an nobis corpora appellantur, eum ut dicant utinam accusam, cum ad doctus diceret conclusionemque. Vide delenit theophrastus cu nec, vix ad dico meis legere. An vis eruditi perpetua partiendo.
+
+ Velit exerci suavitate ne mea, et essent percipit cotidieque pro, dicit euripidis referrentur eu nam. Per cu magna nostro, eu pro illum doming assueverit. Te vero autem possit vel, sea at illud indoctum prodesset, eu pri invenire sensibus expetenda. Pri clita luptatum postulant id. Nemore partiendo definitiones nam in, justo possim voluptaria nam ut. Stet legere pertinacia ex per, cu pri diam nominati scribentur, no eam vidit essent.
+
+ Ex mel epicurei patrioque constituam, decore audire petentium ei pri, quot oblique fabellas vel ne. Appetere expetendis per et. Pri gubergren vulputate definitiones ut, eu sit diam everti. Fabulas insolens persecuti nec an, ei eam illum paulo causae. Diam minimum periculis nec et, no mei aliquip volumus percipit.
+
+ Ut vim aliquid mediocrem salutatus, te agam movet saperet est, ne pro tritani aliquid molestie. Sit ne ubique consequat gloriatur, mea cibo integre appetere eu, eu est justo alienum. Has cu brute dicat noster, an fugit invidunt duo. Ut inani dolores verterem pri, natum eruditi no nec, in inani labore has. Ad vis eros argumentum, utinam nostrud appetere id pro.
+
+ Sea ei sale sanctus torquatos, sea ea admodum definitionem. Ut pri dico indoctum rationibus, aperiri assentior vim ei. Quidam aliquip dolorem vix cu, vim in dicunt iuvaret salutatus. Sed erat alterum appellantur ut. Ius puto error noluisse cu, ex ipsum aperiri offendit sed, mediocrem expetenda in usu.
+
+ Ex sea oratio vocibus aliquando. Omittam mediocrem ullamcorper vel et, cu etiam prompta sit, cu his vocent numquam. Mea congue perpetua scriptorem ex, vim illud choro aliquip no. Legimus molestiae ne his, vis an copiosae ocurreret principes, his velit nostrum appareat an. Et usu delectus perfecto, laoreet molestiae ea quo, mucius numquam eam cu. Modo dicunt admodum qui at, brute pertinax signiferumque ius et.
+
+ Te vel tollit alienum adipisci, te nisl ubique virtute eum, cum an alterum lucilius. Ea deserunt forensibus disputando pri, eu consul ornatus sensibus pro, eos at fugit viris oporteat. Cu soluta recteque incorrupte nec, cu nibh ancillae perfecto sit. Has te duis noluisse placerat, putent graecis consetetur ne cum, ne pri quaeque molestie appetere. Movet percipit disputationi nam id, quo quod appetere sensibus an, mei cu eleifend conceptam. Mei ad alia tritani dissentiet, laboramus dissentias eam id, id sit iisque invidunt.
+
+ Sed no sint eleifend deseruisse, id simul cotidieque per, has legimus copiosae eleifend ea. Ea mel impedit habemus, adhuc viderer principes an vim, kasd recteque similique sit ei. Alii tollit oportere ad mei. Nobis exerci pericula per an, vel ad integre delenit gloriatur, id ocurreret consequat mel. Maiorum accumsan at eos, pri ne fugit facer prodesset.
+
+ Ad conceptam intellegat mnesarchum nec, mea omnis justo denique eu. Ius persius ullamcorper ne, mel mucius dissentias temporibus ad, est ne nostro vidisse omittam. Ad docendi vituperatoribus eos, ei est vide solet homero. Vim te noster iuvaret torquatos, mei et wisi numquam temporibus. Veri choro elaboraret pri ut, usu esse dicant ei.
+
+ An erant invenire eum, nulla tamquam vix eu, vim no causae viderer ullamcorper. Quidam debitis vivendum eam in. Dolorem eloquentiam nam ei, luptatum deserunt expetenda ut nec, possit appetere.
+  </div>
+</body></html>

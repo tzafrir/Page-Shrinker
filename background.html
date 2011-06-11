@@ -1,0 +1,16 @@
+<html>
+<head>
+<script>
+  // Called when the user clicks on the browser action.
+  chrome.browserAction.onClicked.addListener(function(tab) {
+      var width = localStorage['pageShrinker_width'];
+      if (!width) width = "1000";
+      chrome.tabs.executeScript(null, {code:
+          "if (document.body.style.maxWidth == '')" +
+          "{document.body.style.maxWidth = '" + width + "px'} else {" +
+          "document.body.style.maxWidth = ''}"});
+  });
+
+</script>
+</head>
+</html>
