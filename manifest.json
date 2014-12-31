@@ -1,6 +1,7 @@
 {
-   "all_frames": true,
-   "background_page": "background.html",
+   "background": {
+      "scripts": ["background.js"]
+   },
    "options_page": "options.html",
    "browser_action": {
       "default_icon": "icon.png",
@@ -13,5 +14,6 @@
    },
    "name": "Page Shrinker",
    "permissions": [ "tabs", "http://*/*", "https://*/*" ],
-   "version": "1.1.1"
+   "version": "1.2.0",
+   "manifest_version": 2
 }
